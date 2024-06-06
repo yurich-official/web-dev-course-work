@@ -1,0 +1,48 @@
+#menu {
+    width: 200px;
+    height: 270px;
+    position: fixed;
+    z-index: 999;
+    top: -225px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transition: top .5s ease-in-out, height .5s ease-in-out, opacity 0.25s;
+}
+
+#menu:hover {
+    top: 0;
+    height: 225px;
+    opacity: 1 !important;
+}
+
+#menu:hover div {
+    height: 0px;
+}
+
+#menu a:hover {
+    color: lightgray;
+}
+
+#menu a {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 24, 104);
+    color: white;
+    text-decoration: none;
+}
+
+#menu div {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    background: rgb(135,124,111); background: linear-gradient(180deg, rgba(135,124,111,1) 0%, rgba(136,124,108,1) 50%, rgba(97,94,92,1) 100%);
+    transition: height .5s ease-in-out;
+}

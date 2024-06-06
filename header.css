@@ -1,0 +1,84 @@
+header {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(135,124,111); background: linear-gradient(180deg, rgba(135,124,111,1) 0%, rgba(136,124,108,1) 50%, rgba(97,94,92,1) 100%);
+    padding-left: 10%;
+    padding-right: max(10%, 210px);
+}
+
+#header-div1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#header-div1 > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#header-div1 > img {
+    height: 25px;
+}
+
+#header-div2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/*
+#header-div2 > button имеет стилевый класс send-button
+после завершения разметки необходимо переменсти стиль в класс
+*/
+#header-send-button {
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    text-decoration: none;
+    min-width: fit-content;
+}
+
+#header-link {
+    color: white;
+    min-width: fit-content;
+    border-bottom: 2px dotted #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#header-link:hover {
+    color: lightgray;
+    border-bottom: 2px dotted lightgray;
+}
+
+#header-phone {
+    font-weight: bold;
+    min-width: fit-content;
+    text-wrap: nowrap;
+    color: white;
+}
+
+#header-phone:hover {
+    color: lightgray;
+}
+
+@media (max-width: 40em) {
+    #header-phone {
+        display: none;
+    }
+}
+
+@media (max-width: 48em) {
+    #header-link {
+        display: none;
+    }
+}
+
+@media (max-width: 64em) {
+    #header-send-button {
+        display: none;
+    }
+}

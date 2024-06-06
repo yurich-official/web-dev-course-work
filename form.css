@@ -1,0 +1,79 @@
+.form {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background: linear-gradient(180deg, rgba(134,122,109,1) 0%, rgba(100,100,91,1) 100%);
+    width: 220px;
+    border-image: linear-gradient(0deg, rgba(95,96,87,1) 0%, rgba(130,118,103,1) 100%);
+    border: 5px solid transparent;
+}
+
+.form > h2 {
+    color: white;
+}
+
+.form > p {
+    color: white;
+}
+
+.form > p > span {
+    display: block;
+    color: orange;
+}
+
+.form > p.subtext {
+    color: lightgray;
+    font-size: .85em;
+    text-align: center;
+}
+
+.form-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-input-container > input {
+    flex-grow: 1;
+}
+
+.form input {
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.form button {
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.form-input-container > button {
+    margin-top: 0;
+    flex-grow: 1;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered > p > span {
+    display: inline;
+}
+
+.send-button {
+    cursor: pointer;
+}
+
+@media (max-width: 48em) {
+    .form-input-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
